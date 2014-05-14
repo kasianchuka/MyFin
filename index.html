@@ -3,6 +3,14 @@
 	<title>Extra power ...</title>
 </head>
 <body>
-	<input type="datetime-local"></input>
+	<form action="/incomeData" method="POST">
+		<input type="datetime-local">
+		<select aria-label="Рахунок, звідки гроші йдуть  ">
+			<option value=""></option>
+			<option value="Гаманець">Гаманець</option>
+			<option value="Депозит в УПБ">Депозит в УПБ</option>
+		</select>
+		<input type="submit" name="submit" value="Submit" id="ss-submit">
+	</form>
 </body>
 </html>
